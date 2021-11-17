@@ -1,0 +1,14 @@
+Maybe important information from SCSN XML file
+
+Beginning of the file
+cbc:ID
+cbc:OrderTypeCode
+
+cac:OrderLine
+	cbc:Quantity
+	cbc:LineStatusCode
+	cac:RequestedDeliveryPeriod / cac:PromisedDeliveryPeriod
+	cac:Item
+
+
+

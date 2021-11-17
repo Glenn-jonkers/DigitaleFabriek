@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Order xmlns="urn:oasis:names:specification:ubl:schema:xsd:Order-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Order-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Order-2.1.xsd">
+	<!-- SCSN Order example based on UBL Order version 2.1 -->
+	<cbc:ID>123</cbc:ID>
+	<cbc:IssueDate>2018-10-06</cbc:IssueDate>
+	<cbc:OrderTypeCode>New</cbc:OrderTypeCode>
+	<cbc:Note>[Free-form text about the order]</cbc:Note>
+	<cac:QuotationDocumentReference>
+		<cbc:ID>[Reference to quotation document]</cbc:ID>
+	</cac:QuotationDocumentReference>
+	<cac:Contract>
+		<cac:ContractDocumentReference>
+			<cbc:ID>[Reference to contract document]</cbc:ID>
+		</cac:ContractDocumentReference>
+	</cac:Contract>
+	<cac:BuyerCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="GLN">[Party identifier]</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>[Company name]</cbc:Name>
+			</cac:PartyName>
+			<cac:PhysicalLocation>
+				<cbc:ID schemeID="GLN">5790001398644</cbc:ID>
+				<cbc:Description>[Free-form description of the location]</cbc:Description>
+				<cac:Address>
+					<cbc:StreetName>Antoon Coolenlaan</cbc:StreetName>
+					<cbc:BuildingNumber>1 B</cbc:BuildingNumber>
+					<cbc:CityName>Eindhoven</cbc:CityName>
+					<cbc:PostalZone>5644RX</cbc:PostalZone>
+					<cac:AddressLine>
+						<cbc:Line>Inkoopafdeling</cbc:Line>
+					</cac:AddressLine>
+					<cac:Country>
+						<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>[VAT number]</cbc:CompanyID>
+				<cac:TaxScheme/>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:CompanyID schemeID="NL:KVK">[KVK nummer]</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>040-1234567</cbc:Telephone>
+				<cbc:Telefax>040-2345678</cbc:Telefax>
+				<cbc:ElectronicMail>info@bedrijf.nl</cbc:ElectronicMail>
+				<cac:OtherCommunication>
+					<cbc:Value>http://www.bedrijf.nl</cbc:Value>
+				</cac:OtherCommunication>
+			</cac:Contact>
+			<cac:Person>
+				<cbc:FirstName>Maria</cbc:FirstName>
+				<cbc:FamilyName>Pietersen</cbc:FamilyName>
+				<cbc:Title>Mevr.</cbc:Title>
+				<cbc:JobTitle>Inkoop manager</cbc:JobTitle>
+				<cbc:OrganizationDepartment>Afdeling</cbc:OrganizationDepartment>
+				<cac:Contact>
+					<cbc:Telephone>040-1234567</cbc:Telephone>
+					<cbc:Telefax>040-2345678</cbc:Telefax>
+					<cbc:ElectronicMail>info@bedrijf.nl</cbc:ElectronicMail>
+					<cac:OtherCommunication>
+						<cbc:Value>http://www.bedrijf.nl</cbc:Value>
+					</cac:OtherCommunication>
+				</cac:Contact>
+			</cac:Person>
+		</cac:Party>
+	</cac:BuyerCustomerParty>
+	<cac:SellerSupplierParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="GLN">[Party identifier]</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>[Company name]</cbc:Name>
+			</cac:PartyName>
+			<cac:PostalAddress>
+				<cbc:StreetName>Postbus</cbc:StreetName>
+				<cbc:BuildingNumber>31</cbc:BuildingNumber>
+				<cbc:CityName>Eindhoven</cbc:CityName>
+				<cbc:PostalZone>5612AP</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Inkoopafdeling</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:PostalAddress>
+			<cac:PhysicalLocation>
+				<cbc:ID schemeID="GLN">5790001398644</cbc:ID>
+				<cbc:Description>[Free-form description of the location]</cbc:Description>
+				<cac:Address>
+					<cbc:StreetName>Rondom</cbc:StreetName>
+					<cbc:BuildingNumber>1 B</cbc:BuildingNumber>
+					<cbc:CityName>Eindhoven</cbc:CityName>
+					<cbc:PostalZone>5612AP</cbc:PostalZone>
+					<cac:Country>
+						<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>[VAT number]</cbc:CompanyID>
+				<cac:TaxScheme/>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:CompanyID schemeID="NL:KVK">[KVK nummer]</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>040-1234567</cbc:Telephone>
+				<cbc:Telefax>040-2345678</cbc:Telefax>
+				<cbc:ElectronicMail>info@bedrijf.nl</cbc:ElectronicMail>
+				<cac:OtherCommunication>
+					<cbc:Value>http://www.bedrijf.nl</cbc:Value>
+				</cac:OtherCommunication>
+			</cac:Contact>
+			<cac:Person>
+				<cbc:FirstName>Jan</cbc:FirstName>
+				<cbc:FamilyName>Janssen</cbc:FamilyName>
+				<cbc:Title>Dhr.</cbc:Title>
+				<cbc:JobTitle>Sales manager</cbc:JobTitle>
+				<cbc:OrganizationDepartment>[Department name]</cbc:OrganizationDepartment>
+				<cac:Contact>
+					<cbc:Telephone>040-2233445</cbc:Telephone>
+					<cbc:Telefax>040-2345678</cbc:Telefax>
+					<cbc:ElectronicMail>jan.janssen@leverbedrijf.nl</cbc:ElectronicMail>
+					<cac:OtherCommunication>
+						<cbc:Value>http://www.leverbedrijf.nl/afdeling</cbc:Value>
+					</cac:OtherCommunication>
+				</cac:Contact>
+			</cac:Person>
+		</cac:Party>
+	</cac:SellerSupplierParty>
+	<cac:AccountingCustomerParty>
+		<cac:Party>
+			<cac:PartyIdentification>
+				<cbc:ID schemeID="GLN">[Party identifier]</cbc:ID>
+			</cac:PartyIdentification>
+			<cac:PartyName>
+				<cbc:Name>[Company name]</cbc:Name>
+			</cac:PartyName>
+			<cac:PhysicalLocation>
+				<cbc:ID schemeID="GLN">5790001398644</cbc:ID>
+				<cbc:Description>[Free-form description of the location]</cbc:Description>
+				<cac:Address>
+					<cbc:StreetName>Antoon Coolenlaan</cbc:StreetName>
+					<cbc:BuildingNumber>1 B</cbc:BuildingNumber>
+					<cbc:CityName>Eindhoven</cbc:CityName>
+					<cbc:PostalZone>5644RX</cbc:PostalZone>
+					<cac:Country>
+						<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+					</cac:Country>
+				</cac:Address>
+			</cac:PhysicalLocation>
+			<cac:PartyTaxScheme>
+				<cbc:CompanyID>[VAT number]</cbc:CompanyID>
+				<cac:TaxScheme/>
+			</cac:PartyTaxScheme>
+			<cac:PartyLegalEntity>
+				<cbc:CompanyID schemeID="NL:KVK">[KVK nummer]</cbc:CompanyID>
+			</cac:PartyLegalEntity>
+			<cac:Contact>
+				<cbc:Telephone>040-7654321</cbc:Telephone>
+				<cbc:Telefax>040-3456789</cbc:Telefax>
+				<cbc:ElectronicMail>info@accountingbedrijf.nl</cbc:ElectronicMail>
+				<cac:OtherCommunication>
+					<cbc:Value>http://www.accountingbedrijf.nl</cbc:Value>
+				</cac:OtherCommunication>
+			</cac:Contact>
+			<cac:Person>
+				<cbc:FirstName>Hans</cbc:FirstName>
+				<cbc:FamilyName>Janssen</cbc:FamilyName>
+				<cbc:Title>Dhr.</cbc:Title>
+				<cbc:JobTitle>Inkoop manager</cbc:JobTitle>
+				<cbc:OrganizationDepartment>[Department name]</cbc:OrganizationDepartment>
+				<cac:Contact>
+					<cbc:Telephone>040-3344566</cbc:Telephone>
+					<cbc:Telefax>040-3456780</cbc:Telefax>
+					<cbc:ElectronicMail>maria.pietersen@accountingbedrijf.nl</cbc:ElectronicMail>
+					<cac:OtherCommunication>
+						<cbc:Value>http://www.accountingbedrijf.nl/afdeling</cbc:Value>
+					</cac:OtherCommunication>
+				</cac:Contact>
+			</cac:Person>
+		</cac:Party>
+	</cac:AccountingCustomerParty>
+	<cac:DeliveryTerms>
+		<cbc:ID schemeName="INCOTERMS2010">EXW</cbc:ID>
+		<cac:DeliveryLocation>
+			<cbc:ID schemeID="GLN">5790001398644</cbc:ID>
+			<cbc:Description>[Free-form description of the location]</cbc:Description>
+			<cac:Address>
+				<cbc:StreetName>Antoon Coolenlaan</cbc:StreetName>
+				<cbc:BuildingNumber>1 B</cbc:BuildingNumber>
+				<cbc:CityName>Eindhoven</cbc:CityName>
+				<cbc:PostalZone>5644RX</cbc:PostalZone>
+				<cac:AddressLine>
+					<cbc:Line>Inkoopafdeling</cbc:Line>
+				</cac:AddressLine>
+				<cac:Country>
+					<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+				</cac:Country>
+			</cac:Address>
+		</cac:DeliveryLocation>
+	</cac:DeliveryTerms>
+	<cac:PaymentTerms>
+		<cbc:ID>124</cbc:ID>
+		<cbc:Note>[Additional information on payment terms]</cbc:Note>
+		<cbc:SettlementDiscountPercent>5</cbc:SettlementDiscountPercent>
+		<cbc:SettlementDiscountAmount currencyID="EUR">100</cbc:SettlementDiscountAmount>
+		<cac:SettlementPeriod>
+			<cbc:DurationMeasure unitCode="Days">5.0</cbc:DurationMeasure>
+		</cac:SettlementPeriod>
+	</cac:PaymentTerms>
+	<cac:TransactionConditions>
+		<cbc:Description>Accept within 5 days</cbc:Description>
+	</cac:TransactionConditions>
+	<cac:AnticipatedMonetaryTotal>
+		<cbc:PayableAmount currencyID="EUR">1000</cbc:PayableAmount>
+	</cac:AnticipatedMonetaryTotal>
+	<cac:OrderLine>
+		<cac:LineItem>
+			<cbc:ID>1</cbc:ID>
+			<cbc:Note>[Free-form text note on orderline]</cbc:Note>
+			<cbc:LineStatusCode>accepted</cbc:LineStatusCode>
+			<cbc:Quantity unitCode="KGM">50</cbc:Quantity>
+			<cbc:LineExtensionAmount currencyID="EUR">175</cbc:LineExtensionAmount>
+			<cac:Delivery>
+				<cbc:ID>[delivery reference]</cbc:ID>
+				<cbc:Quantity unitCode="KGM">50</cbc:Quantity>
+				<cac:DeliveryLocation>
+					<cbc:ID schemeID="GLN">5790001398644</cbc:ID>
+					<cbc:Description>[Free-form description of the location]</cbc:Description>
+					<cac:Address>
+						<cbc:StreetName>Antoon Coolenlaan</cbc:StreetName>
+						<cbc:BuildingNumber>1 B</cbc:BuildingNumber>
+						<cbc:CityName>Eindhoven</cbc:CityName>
+						<cbc:PostalZone>5644RX</cbc:PostalZone>
+						<cac:AddressLine>
+							<cbc:Line>Inkoopafdeling</cbc:Line>
+						</cac:AddressLine>
+						<cac:Country>
+							<cbc:IdentificationCode>NL</cbc:IdentificationCode>
+						</cac:Country>
+					</cac:Address>
+				</cac:DeliveryLocation>
+				<cac:RequestedDeliveryPeriod>
+					<cbc:EndDate>2018-10-11</cbc:EndDate>
+				</cac:RequestedDeliveryPeriod>
+				<cac:PromisedDeliveryPeriod>
+					<cbc:EndDate>2018-10-11</cbc:EndDate>
+				</cac:PromisedDeliveryPeriod>
+				<cac:Despatch>
+					<cbc:Instructions>[Free-form text instructions for delivery]</cbc:Instructions>
+				</cac:Despatch>
+			</cac:Delivery>
+			<cac:Price>
+				<cbc:PriceAmount currencyID="EUR">4</cbc:PriceAmount>
+				<cbc:BaseQuantity unitCode="KGM">1</cbc:BaseQuantity>
+				<cbc:PriceType>net</cbc:PriceType>
+				<cac:AllowanceCharge>
+					<cbc:ChargeIndicator>false</cbc:ChargeIndicator>
+					<cbc:Amount currencyID="EUR">0.5</cbc:Amount>
+				</cac:AllowanceCharge>
+			</cac:Price>
+			<cac:Item>
+				<cbc:Description>[Description of the item]</cbc:Description>
+				<cbc:Name>[Item name]</cbc:Name>
+				<cac:BuyersItemIdentification>
+					<cbc:ID>[Identifier of the item issued by the BuyerCustomer]</cbc:ID>
+				</cac:BuyersItemIdentification>
+				<cac:SellersItemIdentification>
+					<cbc:ID>AN0000123456</cbc:ID>
+					<cbc:ExtendedID>A1</cbc:ExtendedID>
+				</cac:SellersItemIdentification>
+				<cac:ItemSpecificationDocumentReference>
+					<cbc:ID>[Document identifier]</cbc:ID>
+					<cbc:IssueDate>2018-10-05</cbc:IssueDate>
+					<cbc:DocumentType>TPD</cbc:DocumentType>
+					<cbc:VersionID>[version number]</cbc:VersionID>
+					<cac:Attachment>
+						<cac:ExternalReference>
+							<cbc:URI>[URL where the file is available]</cbc:URI>
+							<cbc:DocumentHash>[Hashcode of the file]</cbc:DocumentHash>
+							<cbc:MimeCode>application/pdf</cbc:MimeCode>
+							<cbc:FileName>[File name]</cbc:FileName>
+							<cbc:Description>[Description of the file]</cbc:Description>
+						</cac:ExternalReference>
+					</cac:Attachment>
+				</cac:ItemSpecificationDocumentReference>
+				<cac:AdditionalItemProperty>
+					<cbc:Name/>
+					<cbc:Value>55</cbc:Value>
+				</cac:AdditionalItemProperty>
+				<cac:ManufacturerParty>
+					<cac:PartyIdentification>
+						<cbc:ID schemeID="GLN">[Party identifier]</cbc:ID>
+					</cac:PartyIdentification>
+					<cac:PartyName>
+						<cbc:Name>[Company name]</cbc:Name>
+					</cac:PartyName>
+				</cac:ManufacturerParty>
+				<cac:Dimension>
+					<cbc:AttributeID>Length</cbc:AttributeID>
+					<cbc:Measure unitCode="MMT">220</cbc:Measure>
+				</cac:Dimension>
+			</cac:Item>
+		</cac:LineItem>
+	</cac:OrderLine>
+</Order>
