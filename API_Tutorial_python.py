@@ -1,7 +1,3 @@
-# msg = "Ola"
-# print(msg)
-
-
 from flask import Flask
 from flask_restful import Resource, Api, reqparse
 import pandas as pd
@@ -24,8 +20,8 @@ class Users(Resource):
     def post(self):
         # How to read a body of the API call
         # Check how to read XML
-        parser = reqparse.RequestParser()
-        parser.add_argument('userId', required=True, type=int)
+        parser = reqparse.RequestParser() # Used to read parameters of the call
+        parser.add_argument('userId', required=True, type=int) # Specifically looks for a parameter with the value 'userId'
         parser.add_argument('name', required=True, type=str)
         parser.add_argument('city', required=True, type=str)
         args = parser.parse_args()
