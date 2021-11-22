@@ -10,6 +10,8 @@ api = Api(app)
 # Classes as resources
 @app.route('/api/v1/users', methods=['POST'])
 def postMissionToFleetmanager():
+    # Eventueel validatie, indien nodig?
+
     # Tijdelijke URL, voor PoC dat er een POST gestuurd kan worden:
     URL = "https://reqbin.com/echo/post/json"
     
@@ -23,8 +25,17 @@ def postMissionToFleetmanager():
     request = requests.post(url=URL, json=JSON)
 
     # Return value to confirm it was succesfull with statuscode of choice
-    return {'response': "Call succesfull, resultcode: " + str(request.status_code)}, 200
+    return {'response': switch_responsecode(request.status_code)}, request.status_code
   
+def switch_responsecode(responseCode):
+    switcher = {
+        200: "Call succesfull",
+        400: "Bad Request, try again",
+        404: "Not Found"
+    }
+    return switcher.get(responseCode, "Internal server error")
+
+
 
 # Used to run the API
 if __name__ == '__main__':
